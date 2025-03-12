@@ -1,7 +1,8 @@
 ---
 name: "pulp-cli CI"
+
 on:
-  push
+  push:
 
 concurrency:
   group: "main-${{ github.ref_name }}-${{ github.workflow }}"
